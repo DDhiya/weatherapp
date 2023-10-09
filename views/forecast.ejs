@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Search Place</title>
+</head>
+
+<body>
+    <div class="mainBody">
+        
+        <h1>Weather Results</h1>
+
+        <div class="boxCard">
+            <h2>
+                <%= place.name %>
+            </h2>
+            <hr>
+            <h4>Latitude: <%= place.latitude %> | Longitude: <%= place.longitude %>
+            </h4>
+        </div>
+
+        <div class="boxCard">
+            <h4>Temperature: <%= current.temperature %> °C</h4>
+            <h4>Wind Speed: <%= current.windSpeed %> km/h</h4>
+            <h4>Wind Direction: <%= current.windDirection %>°</h4>
+        </div>
+
+        <div class="boxCard">
+            <div class="forecastWeather">
+                <% for(let i=0; i < forecast.time.length; i++) { %>
+                    <div class="forecastContainer">
+                        <p class="<%= icon[forecast.weatherCode[i]] %>"></p>
+                        <h5><%= forecast.time[i] %></h5>
+                        <h5><%= forecast.temperature[i] %> °C</h5>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

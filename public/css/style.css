@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+form {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+hr {
+  border: 1px solid #00B4CC;
+}
+
+h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track-piece{
+  width: 1rem;
+  background: #DADADA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00B4CC; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006087 ; 
+}
+
+.middle {
+  margin:auto;
+  text-align:center;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainBody {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  text-align:center;
+  align-items: center;
+}
+
+.boxCard {
+  border-right: none;
+  background-color: white;
+  opacity: 0.8;
+  padding: 4rem;
+  height: 30%;
+  border-radius: 1rem;
+  outline: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  border: 3px solid #00B4CC;
+}
+
+.forecastWeather {
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.forecastContainer {
+  flex: 1;
+  text-align: center;
+  width: fit-content;
+  padding: 1rem;
+}
